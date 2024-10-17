@@ -6,8 +6,9 @@
 }
 
 /* Set global styles */
-
 html {
+  --dark-primary: #999999;
+  --accent: #ff6600;
   font-family: Inter;
   font-size: 16px;
 }
@@ -18,4 +19,33 @@ h1 {
 
 h2 {
   font-size: 24px;
+}
+
+/* Input and Label styles */
+
+:is(input, textarea) {
+  border: 1px solid var(--dark-primary);
+  border-radius: 4px;
+  min-height: 32px;
+  line-height: 24px;
+  padding: 4px 3px;
+  font-family: inherit;
+  width: 100%;
+}
+
+:is(label, .tag) {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+:checked + label {
+  color: #ff6600;
+}
+
+.tag {
+  color: #ff6600;
+  border: 1px solid var(--accent);
+  border-radius: 2px;
+  display: inline-block;
+  padding: 2px 3px;
 }

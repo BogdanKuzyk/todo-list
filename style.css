@@ -1,0 +1,21 @@
+/* Reset default browser Styles */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Set global styles */
+
+html {
+  font-family: Inter;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
